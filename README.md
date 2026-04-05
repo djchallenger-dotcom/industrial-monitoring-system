@@ -5,6 +5,8 @@
 
 This project simulates an industrial monitoring system for haul trucks using time-series sensor data. It detects abnormal operating conditions, generates alerts, and evaluates detection performance to support proactive maintenance decisions.
 
+This project demonstrates how industrial sensor data can be transformed into actionable maintenance insights using a structured and interpretable anomaly detection system.
+
 ## 🎯 Problem
 
 Mining operations rely heavily on haul trucks, where unexpected equipment failures can lead to significant downtime and operational costs. Detecting early warning signs from sensor data is critical for improving reliability and reducing maintenance risk.
@@ -31,7 +33,7 @@ The dataset is fully simulated to reflect real-world industrial conditions:
   - Hydraulic pressure
   - Vibration
   - Speed
-  - 
+    
 ### Injected Failure Scenarios
 
 - **Overheating:** gradual temperature increase with reduced speed
@@ -68,18 +70,19 @@ A composite health score (0–100) is calculated:
 
 Alerts are categorized based on health score:
 
-- Normal: healthy operation
-- Warning: early signs of abnormal behavior
-- Critical: multiple or severe issues detected
+- **Normal:** healthy operation
+- **Warning:** early signs of abnormal behavior
+- **Critical:** multiple or severe issues detected
 
 ## 📈 Results
 
-Detection performance was evaluated by comparing simulated ground truth (status) with detected alerts:
+Detection performance was evaluated by comparing simulated ground truth (`status`) with detected alerts:
 
-```markdown
+```text
 Precision: 0.86
-Recal    0.57
+Recall:    0.57
 ```
+
 ### Interpretation
 
 - **High precision (0.86):** alerts are reliable with few false positives
