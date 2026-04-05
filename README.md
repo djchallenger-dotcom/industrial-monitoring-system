@@ -1,13 +1,13 @@
-🚛 Haul Truck Sensor Monitoring and Alerting System
-📌 Overview
+# 🚛 Haul Truck Sensor Monitoring and Alerting System
+## 📌 Overview
 
 This project simulates an industrial monitoring system for haul trucks using time-series sensor data. It detects abnormal operating conditions, generates alerts, and evaluates detection performance to support proactive maintenance decisions.
 
-🎯 Problem
+## 🎯 Problem
 
 Mining operations rely heavily on haul trucks, where unexpected equipment failures can lead to significant downtime and operational costs. Detecting early warning signs from sensor data is critical for improving reliability and reducing maintenance risk.
 
-💡 Solution
+## 💡 Solution
 
 This project builds a complete monitoring pipeline that:
 
@@ -17,7 +17,7 @@ Detects anomalies using rule-based logic and rolling statistics
 Assigns a health score to represent equipment condition
 Generates alerts (normal / warning / critical)
 Evaluates detection performance using precision and recall
-📊 Data Simulation
+## 📊 Data Simulation
 
 The dataset is fully simulated to reflect real-world industrial conditions:
 
@@ -73,12 +73,12 @@ Moderate recall (0.57): some early-stage anomalies are missed
 
 This reflects a conservative alerting strategy, prioritizing trust in alerts over sensitivity.
 
-🔍 Key Insights
+## 🔍 Key Insights
 Rule-based systems can effectively detect equipment anomalies in industrial settings
 There is a natural tradeoff between false alarms and missed detections
 Health scoring improves interpretability for operators and maintenance teams
 Rolling statistics help capture gradual failure patterns
-🧱 Project Structure
+## 🧱 Project Structure
 .
 ├── simulate_sensor_data.py   # Generate synthetic haul truck sensor data
 ├── detect_anomalies.py      # Detect anomalies and generate alerts
@@ -87,7 +87,7 @@ Rolling statistics help capture gradual failure patterns
 ├── haul_truck_sensor_data.csv
 ├── haul_truck_alerts.csv
 └── README.md
-🚀 How to Run
+## 🚀 How to Run
 1. Generate data
 python simulate_sensor_data.py
 2. Detect anomalies
@@ -96,13 +96,13 @@ python detect_anomalies.py
 python evaluate_alerts.py
 4. (Optional) Visualize data
 python plot_sensor_data.py
-🔮 Future Improvements
+## 🔮 Future Improvements
 Machine learning-based anomaly detection
 Real-time streaming pipeline (Kafka / Spark)
 Adaptive thresholds per truck or operating condition
 Integration with maintenance scheduling systems
 Dashboard for live monitoring and alert visualization
-🧠 Skills Demonstrated
+## 🧠 Skills Demonstrated
 Time-series analysis
 Anomaly detection
 Data simulation
@@ -110,6 +110,6 @@ Feature engineering
 System design for monitoring workflows
 Performance evaluation (precision / recall)
 Python (pandas, numpy, matplotlib)
-📌 Summary
+## 📌 Summary
 
 This project demonstrates how sensor data can be transformed into actionable insights through a structured monitoring pipeline. It highlights the challenges of anomaly detection in industrial environments and the importance of balancing detection sensitivity with operational reliability.
